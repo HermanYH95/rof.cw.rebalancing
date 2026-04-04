@@ -43,7 +43,7 @@ var SERVER = {
           && (this.v.minor === 5
           ||  this.v.minor === 41))
         || this.v.major === 5
-      ? 20 : 20;
+      ? 20 : 10;
   },
   hasAllianceBoni: function () {
     return this.v.major == 4;
