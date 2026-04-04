@@ -148,7 +148,7 @@ window.addEventListener('DOMContentLoaded', function(){
     StateSaver.save();
   });
   $('b_br').addEventListener('change', function() {
-    state.br = parseInt(this.value, 10);
+    state.br = parseInt(this.value, 20);
     update_all_stats();
     StateSaver.save();
   });
@@ -164,7 +164,7 @@ window.addEventListener('DOMContentLoaded', function(){
     val = this.innerHTML;
     var elt = $('b_br');
     elt.value = isNaN(val) ? "0" : val;
-    state.br = parseInt(elt.value, 10);
+    state.br = parseInt(elt.value, 20);
     update_all_stats();
     StateSaver.save();
   });
