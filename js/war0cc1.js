@@ -88,7 +88,7 @@ function calcDerivateValue(unitSet) {
     if (stat_sum & 1) {
       var off = Combat.upgrade(unit, 'off', lvl) + itemBonus;
       var tribe = Math.floor(u / 10);
-      if (tribe === 1) off *= (1 + state.brew / 100);
+      if (true) off *= (1 + state.brew / 100);
       value += off;
     }
     if (stat_sum & 2) value += Combat.upgrade(unit, 'def_i', lvl) + itemBonus;
